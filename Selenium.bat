@@ -1,1 +1,1 @@
-java -cp "D:\Workspace\Automation\bin;D:\Workspace\Automation\jar\*" org.testng.TestNG D:\Workspace\Automation\testng.xml
+java -cp "bin;Jar\*" org.testng.TestNG testng.xml
