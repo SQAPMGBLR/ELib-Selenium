@@ -16,7 +16,7 @@ pipeline {
     stage('Selenium Test') {
       steps {
         echo 'Testing with selenium'
-        bat 'java -cp "https://github.com/SQAPMGBLR/ELib-Selenium/bin;https://github.com/SQAPMGBLR/ELib-Selenium/jar/*" org.testng.TestNG https://github.com/SQAPMGBLR/ELib-Selenium/testng.xml'
+        bat 'java -cp "https://github.com/SQAPMGBLR/ELib-Selenium/bin;https://github.com/SQAPMGBLR/ELib-Selenium/jar/*" org.testng.TestNG https://github.com/SQAPMGBLR/ELib-Selenium/blob/master/testng.xml'
       }
     }
   }
