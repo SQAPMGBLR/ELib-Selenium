@@ -7,9 +7,10 @@ pipeline {
         echo 'Build is done'
       }
     }
-    stage('Test Reports') {
+    stage('Sonar Reports') {
       steps {
         echo 'see reports'
+        bat(script: 'sonar-scanner', returnStatus: true, returnStdout: true)
       }
     }
   }
