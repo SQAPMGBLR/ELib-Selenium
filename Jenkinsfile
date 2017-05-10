@@ -16,7 +16,7 @@ pipeline {
     stage('Selenium Test') {
       steps {
         echo 'Testing with selenium'
-        bat '/SQAPMGBLR/ELib-Selenium/tree/master/src/com/nttdata/test java NewTest'
+        bat 'Selenium'
       }
     }
   }
