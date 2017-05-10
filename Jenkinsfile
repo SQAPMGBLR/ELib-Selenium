@@ -13,5 +13,11 @@ pipeline {
         bat(script: 'sonar-scanner', returnStatus: true, returnStdout: true)
       }
     }
+    stage('Selenium Test') {
+      steps {
+        echo 'Testing with selenium'
+        bat ' java -cp *\testng.xml'
+      }
+    }
   }
 }
